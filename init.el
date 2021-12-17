@@ -190,7 +190,8 @@
 (evil-mode 1)
 
 ;;Emacs-mac option key binding command
-(setq mac-command-modifier 'meta)
+(setq mac-command-modifier 'meta
+      mac-option-modifier 'super)
 
 
 ;; Enable Cache
@@ -209,6 +210,8 @@
 ;; (setq youdao-dictionary-use-chinese-word-segmentation t)
 
 
+;; Set emacs C source code directory from customize
+(setq find-function-C-source-directory "~/Desktop/emacs/src/")
 
 ;; Local Variables:
 ;; coding: utf-8
