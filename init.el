@@ -21,7 +21,7 @@
 (defconst *spell-check-support-enabled* nil) ;; Enable with t if you prefer
 (defconst *is-a-mac* (eq system-type 'darwin))
 
-
+
 ;; Adjust garbage collection thresholds during startup, and thereafter
 
 (let ((normal-gc-cons-threshold (* 20 1024 1024))
@@ -30,7 +30,7 @@
   (add-hook 'emacs-startup-hook
             (lambda () (setq gc-cons-threshold normal-gc-cons-threshold))))
 
-
+
 ;; Bootstrap config
 
 
@@ -41,7 +41,7 @@
 (require 'init-elpa)      ;; Machinery for installing required packages
 (require 'init-exec-path) ;; Set up $PATH
 
-
+
 ;; Allow users to provide an optional "init-preload-local.el"
 (require 'init-preload-local nil t)
 
@@ -174,13 +174,13 @@
 
 
 ;; Set up package.el to work with MELPA
-(require 'package)
-(add-to-list 'package-archives
-             '("melpa" . "https://melpa.org/packages/"))
+;;(require 'package)
+;;(add-to-list 'package-archives
+  ;;           '("melpa" . "https://melpa.org/packages/"))
 
-(package-refresh-contents)
+;;(package-refresh-contents)
 
-
+
 ;; Download Evil
 (unless (package-installed-p 'evil)
   (package-install 'evil))
@@ -188,12 +188,12 @@
 ;; Enable Evil
 (require 'evil)
 (evil-mode 1)
-
+
 ;;Emacs-mac option key binding command
 (setq mac-command-modifier 'meta
       mac-option-modifier 'super)
 
-
+
 ;; Enable Cache
 (setq url-automatic-caching t)
 
@@ -209,7 +209,7 @@
 ;; Enable Chinese word segmentation support (支持中文分词)
 ;; (setq youdao-dictionary-use-chinese-word-segmentation t)
 
-
+
 ;; Set emacs C source code directory from customize
 (setq find-function-C-source-directory "~/Desktop/emacs/src/")
 
