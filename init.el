@@ -118,6 +118,7 @@
 (require 'init-clojure)
 (require 'init-clojure-cider)
 (require 'init-common-lisp)
+(require 'init-youdao-dictionary.el)
 
 (when *spell-check-support-enabled*
   (require 'init-spelling))
@@ -173,42 +174,9 @@
 
 
 
-;; Set up package.el to work with MELPA
-;;(require 'package)
-;;(add-to-list 'package-archives
-  ;;           '("melpa" . "https://melpa.org/packages/"))
-
-;;(package-refresh-contents)
-
-
-;; Download Evil
-(unless (package-installed-p 'evil)
-  (package-install 'evil))
-
-;; Enable Evil
-(require 'evil)
-(evil-mode 1)
-
 ;;Emacs-mac option key binding command
 (setq mac-command-modifier 'meta
       mac-option-modifier 'super)
-
-
-;; Enable Cache
-(setq url-automatic-caching t)
-
-;; Example Key binding
-(global-set-key (kbd "C-c y") 'youdao-dictionary-search-at-point)
-
-;; Integrate with popwin-el (https://github.com/m2ym/popwin-el)
-;; (push "*Youdao Dictionary*" popwin:special-display-config)
-
-;; Set file path for saving search history
-;; (setq youdao-dictionary-search-history-file "~/.emacs.d/.youdao")
-
-;; Enable Chinese word segmentation support (支持中文分词)
-;; (setq youdao-dictionary-use-chinese-word-segmentation t)
-
 
 ;; Set emacs C source code directory from customize
 (setq find-function-C-source-directory "~/Desktop/emacs/src/")
