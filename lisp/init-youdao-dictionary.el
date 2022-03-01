@@ -431,7 +431,7 @@ i.e. `[语][计] dictionary' => 'dictionary'."
 )
 
 
-(provide 'init-youdao-dictionary.el)
+(provide 'init-youdao-dictionary)
 
 ;; Local Variables:
 ;; coding: utf-8

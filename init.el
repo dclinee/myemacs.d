@@ -118,7 +118,7 @@
 (require 'init-clojure)
 (require 'init-clojure-cider)
 (require 'init-common-lisp)
-(require 'init-youdao-dictionary.el)
+(require 'init-youdao-dictionary)
 
 (when *spell-check-support-enabled*
   (require 'init-spelling))
@@ -173,6 +173,7 @@
 (provide 'init)
 
 
+
 
 ;;Emacs-mac option key binding command
 (setq mac-command-modifier 'meta
