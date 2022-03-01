@@ -181,6 +181,10 @@
 ;; Set emacs C source code directory from customize
 (setq find-function-C-source-directory "~/Desktop/emacs/src/")
 
+;; Enable Evil
+(require 'evil)
+(evil-mode 1)
+
 ;; Local Variables:
 ;; coding: utf-8
 ;; no-byte-compile: t
