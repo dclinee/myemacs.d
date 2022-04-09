@@ -185,7 +185,8 @@
 ;; Enable Evil
 (require 'evil)
 (evil-mode 1)
-
+(require 'company-tabnine)
+(add-to-list 'company-backends #'company-tabnine)
 ;; Local Variables:
 ;; coding: utf-8
 ;; no-byte-compile: t
