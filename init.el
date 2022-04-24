@@ -172,7 +172,6 @@
 
 (provide 'init)
 
-
 
 
 ;;Emacs-mac option key binding command
@@ -185,7 +184,15 @@
 ;; Enable Evil
 (require 'evil)
 (evil-mode 1)
+<<<<<<< HEAD
 
+(require 'company-tabnine)
+(add-to-list 'company-backends #'company-tabnine)
+
+=======
+(require 'company-tabnine)
+(add-to-list 'company-backends #'company-tabnine)
+>>>>>>> 0f87d7217bf7a1e9a366b1f6cfe1b725e409c91e
 ;; Local Variables:
 ;; coding: utf-8
 ;; no-byte-compile: t

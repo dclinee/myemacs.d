@@ -438,4 +438,4 @@ i.e. `[语][计] dictionary' => 'dictionary'."
 ;; indent-tabs-mode: nil
 ;; End:
 
-;;; youdao-dictionary.el ends here
+;;; init-youdao-dictionary.el ends here
