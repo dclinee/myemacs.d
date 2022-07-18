@@ -382,8 +382,11 @@ typical word processor."
       (sh . t) ;; obsolete
       (shell . t)
       (sql . t)
+      (merlin . t)
       (sqlite . t)))))
 
+(require 'ob-mermaid)
+(setq ob-mermaid-cli-path "/opt/homebrew/bin/mmdc")
 
 (provide 'init-org)
 ;;; init-org.el ends here
