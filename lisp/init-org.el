@@ -383,8 +383,11 @@ typical word processor."
       (shell . t)
       (sql . t)
       (merlin . t)
+      (C . t)
       (sqlite . t)))))
 
+(require 'ob-shell)
+(require 'ob-C)
 (require 'ob-mermaid)
 (setq ob-mermaid-cli-path "/opt/homebrew/bin/mmdc")
 

@@ -184,17 +184,10 @@
 ;; Enable Evil
 (require 'evil)
 (evil-mode 1)
-<<<<<<< HEAD
 (require 'company-tabnine)
 (add-to-list 'company-backends #'company-tabnine)
 ;; MERMAID settings
 ;;(setq ob-mermaid-cli-path "/opt/homebrew/bin/mmdc")
-=======
-
-(require 'company-tabnine)
-(add-to-list 'company-backends #'company-tabnine)
-
->>>>>>> origin/master
 ;; Local Variables:
 ;; coding: utf-8
 ;; no-byte-compile: t
