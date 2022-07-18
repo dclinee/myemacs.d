@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+1112
+=======
 1791
+>>>>>>> 42814cf855608345dfc99fa7ef8895ef186d46fd
 50
 Emacs tutorial.  See end for copying conditions.
 
@@ -17,6 +21,18 @@ To quit a partially entered command, type C-g.
 To stop the tutorial, type C-x k, then <Return> at the prompt.
 The characters ">>" at the left margin indicate directions for you to
 try using a command.  For instance:
+
+
+
+
+
+
+[Middle of page left blank for didactic purposes.   Text continues below]
+
+
+
+
+
 
 >> Now type C-v (View next screen) to scroll down in the tutorial.
 	(go ahead, do it by holding down the CONTROL key while typing v).
