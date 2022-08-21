@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-1112
+-225
+1114
 =======
 1791
 >>>>>>> 42814cf855608345dfc99fa7ef8895ef186d46fd
@@ -20,7 +20,7 @@ Important note: to end the Emacs session, type C-x C-c.  (Two characters.)
 To quit a partially entered command, type C-g.
 To stop the tutorial, type C-x k, then <Return> at the prompt.
 The characters ">>" at the left margin indicate directions for you to
-try using a command.  For instance:
+nntry using a command.  For instance:
 
 
 
